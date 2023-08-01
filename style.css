@@ -1,0 +1,56 @@
+*{
+    letter-spacing: 0.5px;
+}
+
+#scroll{
+        width: 600px;
+        height: 120px;
+        gap: 100px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+} 
+
+::-webkit-scrollbar-thumb {
+    background: #353535; 
+    border-radius: 10px;
+}
+
+#bg-video{
+    height: 530px;
+  width: 1440px;
+  object-fit:fill;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  border-radius: 30px;
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+  opacity: 0.5; 
+}
+
+#top-h1{
+    font-family: 'Pacifico', cursive;
+}
+
+#all-fonts{
+    font-family: 'Patrick Hand', cursive;
+}
+
+#curr-stat{
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+
+
+
