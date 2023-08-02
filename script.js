@@ -218,12 +218,12 @@ const getData = async (event) => {
     }else if(isDay==0){
       video.src = "./assets/moony.mp4";
     }
-    if (condition=="Light rain shower" && isDay>0) {
+    if (condition=="Light rain shower" || condition=="Moderate rain" && isDay>0) {
       video.src = "./assets/light rain.mp4";
     }else if(isDay==0){
       video.src = "./assets/moony.mp4";
     }
-    if (condition=="Moderate or heavy rain shower" || condition=="Moderate or heavy rain with thunder" && isDay>0) {
+    if (condition=="Moderate or heavy rain shower" || condition=="Moderate or heavy rain with thunder" || condition=="Torrential rain shower" && isDay>0) {
       video.src = "./assets/heavy rain.mp4";
     }else if(isDay==0){
       video.src = "./assets/moony.mp4";
