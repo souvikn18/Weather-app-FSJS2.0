@@ -52,5 +52,141 @@
     scroll-behavior: smooth;
 }
 
-
-
+@media only screen and (max-width: 415px) {
+    #main{
+        width: 380px;
+        height: 330px;
+        margin-top: 70px;
+    }
+    #searchbar{
+        position: absolute;
+        top: -85px;
+    }
+    #searchbox{
+        width: 330px;
+        height: 40px;
+        border-radius: 30px;
+        background-color: white;
+    }
+    #search-button{
+        margin-top: 5px;
+    }
+    #logo-mb{
+        margin-left: 550px;
+        margin-top: 20px;
+        
+    }
+    #top-h1{
+        font-size: 40px;
+    }
+    #full-location{
+        font-size: 15px;
+    }
+    #all-fonts{
+        max-width: 415px;
+    }
+    #bg-video{
+        height: 330px;
+      width: 380px;
+      object-fit:fill;
+      position: fixed;
+      left: 0px;
+      right: 0;
+      top: 0px;
+      bottom: 0;
+      z-index: -1;
+      border-radius: 30px;
+      filter: blur(2px);
+      -webkit-filter: blur(2px);
+      opacity: 0.5; 
+      
+    }
+    #temp-details{
+        margin-left:430px;
+        margin-top: -140px;
+    }
+    #main-icon{
+        height: 100px;
+        width: 150px;
+    }
+    #main-temp{
+        font-size: 70px;
+    }
+    #stat-container{
+        font-size: 16px;
+    }
+    #max-min{
+        font-size: 15px;
+        margin-left: 20px;
+    }
+    #curr-date{
+        margin-left: -30px;
+    }
+    #scroll{
+        position: absolute;
+        top: 340px;
+        width: 380px;
+        height: 120px;
+        left: 0px;
+        gap: 100px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        scroll-behavior: smooth;
+    }
+    #future-forecast{
+        height: 260px;
+        width: 380px;
+        margin-top: 120px;
+    }
+    #seven-day{
+        font-size: 30px;
+        margin-left: -40px;
+    }
+    #dw{
+        font-size: 20px;
+    }
+    #dw1{
+        font-size: 15px;
+    }
+    #dw2{
+        font-size: 15px;
+    }
+    #weather-details{
+        height: 260px;
+        width: 380px;
+        margin-top: -40px;
+    }
+    #wdh{
+        font-size: 30px;
+    }
+    #wddh{
+        font-size: 20px;
+    }
+    #wddv{
+        font-size: 15px;
+    }
+    #uv,#moon-phase{
+        font-size: 15px;
+    }
+    #wd-all-data{
+        row-gap: 13px;
+        margin-left: -10px;
+        margin-top: -2px;
+    }
+    #other-details{
+        height: 200px;
+        width: 380px;
+        margin-top: -40px;
+    }
+    #od-all-data{
+        row-gap: 13px;
+        margin-left: 30px;
+        margin-top: -2px;
+        column-gap: 13px;
+    }
+    #footer{
+        display: flex;
+        gap: 70px;
+    }
+}

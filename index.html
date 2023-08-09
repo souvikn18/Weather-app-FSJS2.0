@@ -25,31 +25,30 @@
     <title>Weatherbook</title>
 </head>
 <body class="h-[900px] mx-w-[1440px] box-border bg-[#000210]" id="all-fonts">
-    <div class="flex justify-center">
+    <div class="flex justify-center" >
     <main class=" mx-[250px] my-[30px] rounded-[30px] bg-[#202020] drop-shadow-xl opacity-80 w-[1380px]" id="main">
         <!-- logo and searchbar start -->
         <div class="flex justify-center gap-[100px]">
             <video id="bg-video" autoplay loop muted>
                 <source src="./assets/cloudy day.mp4" type="">
             </video>
-            <div class="text-white">
+            <div class="text-white" id="logo-mb">
                 <h1 class="text-[50px] " id="top-h1">Weatherbook</h1>
-                <div class="text-[20px] pl-2 flex gap-2 w-[900px]"> 
+                <div class="text-[20px] pl-2 flex gap-2 w-[900px]" id="full-location"> 
                     <p ><span id="name">_</span>,</p>
                     <p ><span id="region">_</span>,</p>
                     <p ><span id="country">_</span></p>
-                </div>
-                
+                </div>   
             </div>
-            <form onsubmit="getData(event)" class="mt-8 flex gap-[10px]">
-                <input class="h-[35px] w-[200px] rounded pl-2 py-4 border-[1px] border-[#353535] bg-transparent text-white" type="text" name="" id="searchbox" placeholder="search...">
-                <button class="mb-10"><img class="h-6 w-6" src="./assets/search-13-64.png" alt=""></button>
+            <form onsubmit="getData(event)" class="mt-8 flex gap-[10px]" id="searchbar">
+                <input class="h-[35px] w-[200px] rounded pl-2 py-4 border-[1px] border-[#353535] bg-transparent text-white"  type="text" name="" id="searchbox" placeholder="search...">
+                <button class="mb-10" id="search-button"><img class="h-6 w-6" src="./assets/search-13-64.png" alt=""></button>
             </form>
         </div>
         <!-- logo and searchbar end -->
 
         <div class="flex gap-[300px] justify-center mt-[200px]">
-            <div class="ml-[130px]">
+            <div class="ml-[130px]" id="temp-details">
                 <!-- temp details start -->
                 <div class="flex justify-center">
                     <img class="h-[150px] w-[200px]" id="main-icon" src="./assets/[CITYPNG.COM]HD White Storage Host Clouds Icon PNG - 1224x864.png" alt="">
@@ -59,7 +58,7 @@
                         <p class="ml-2 w-[160px]" id="curr-stat">_</p>
                     </div>
                 </div>
-                <div class="text-white flex flex-col items-center text-[20px] mr-[50px] w-[300px] mb-4">
+                <div class="text-white flex flex-col items-center text-[20px] mr-[50px] w-[300px] mb-4" id="max-min">
                     <div class="flex gap-2 w-[400px] ml-[120px]">
                         <p><span id="curr-loc">_</span>,</p>
                         <p>Max/Min: <span id="max">_</span>°C/ </p>
@@ -72,7 +71,7 @@
                 <!-- temp details end -->
             </div>
             
-            <div class="mt-[80px] mr-[150px]">
+            <div class="mt-[80px] mr-[150px]" id="today-forecast">
                 <!-- all day forecast start -->
             <div class="flex gap-4" id="scroll">
                 <div class="text-white flex flex-col items-center h-[150px] w-10">
@@ -204,18 +203,18 @@
 
     <div class="divide-solid divide-y divide-x-0 divide-slate-800">
     <!-- lower section -->
-    <div class="flex justify-center gap-[30px]">
+    <div class="flex justify-center gap-[30px] flex-wrap">
             <!-- 7day forecast section start -->
-    <section class="rounded-[30px] bg-[#202020] drop-shadow-xl w-[440px] h-[350px] px-[10px] py-[15px] mb-[30px] opacity-50 hover:opacity-75 duration-500">
-        <div class="text-white text-[40px] flex justify-center">
-            <h1>7-days Weather Forecast</h1>
+    <section class="rounded-[30px] bg-[#202020] drop-shadow-xl w-[440px] h-[350px] px-[10px] py-[15px] mb-[30px] opacity-50 hover:opacity-75 duration-500" id="future-forecast">
+        <div class="text-white text-[40px] flex justify-center" id="seven-day">
+            <h1 >7-days Weather Forecast</h1>
         </div>
-        <div class="text-white flex gap-[150px] text-[26px] justify-center mr-[30px]">
+        <div class="text-white flex gap-[150px] text-[26px] justify-center mr-[30px]" id="dw">
             <p>Date</p>
             <p>Weather</p>
         </div>
         <div class="flex gap-[80px] justify-center mr-[40px]">
-            <div class="text-white text-[20px] ml-4">
+            <div class="text-white text-[20px] ml-4" id="dw1">
                 <p class="w-[110px]" id="date0">Day1</p>
                 <p class="w-[110px]" id="date1">Day2</p>
                 <p class="w-[110px]" id="date2">Day3</p>
@@ -224,7 +223,7 @@
                 <p class="w-[110px]" id="date5">Day6</p>
                 <p class="w-[110px]" id="date6">Day7</p>
             </div>
-            <div class="text-[20px]">
+            <div class="text-[20px]" id="dw2">
                 <div class="text-white flex gap-2">
                     <p><span id="forecast-max1">_</span>°C&nbsp;/</p>
                     <p><span id="forecast-min1">_</span>°C</p>
@@ -259,65 +258,65 @@
     <!-- 7day forecast section end -->
 
     <!-- weather details section start -->
-    <section class="rounded-[30px] bg-[#202020] drop-shadow-xl w-[440px] h-[350px] px-[10px] py-[15px] mb-[30px] opacity-50 hover:opacity-75 duration-500">
-        <div class="text-white text-[40px] ml-4">
+    <section class="rounded-[30px] bg-[#202020] drop-shadow-xl w-[440px] h-[350px] px-[10px] py-[15px] mb-[30px] opacity-50 hover:opacity-75 duration-500" id="weather-details">
+        <div class="text-white text-[40px] ml-4" id="wdh">
             <h1>Weather Details</h1>
         </div>
-        <div class="grid grid-cols-2 justify-center h-[170px] w-[300px] gap-x-[150px] gap-y-[30px] mx-[20px] my-[20px]">
+        <div class="grid grid-cols-2 justify-center h-[170px] w-[300px] gap-x-[150px] gap-y-[30px] mx-[20px] my-[20px]" id="wd-all-data">
             <div class="text-white flex flex-col items-center h-[50px] w-[240px]">
-                <p class="text-[26px]">Apparent temparature</p>
-                <p class="text-[20px]"><span id="app-temp">_</span>°C</p>
+                <p class="text-[26px]" id="wddh">Apparent temparature</p>
+                <p class="text-[20px]" id="wddv"><span id="app-temp">_</span>°C</p>
             </div>
             <div class="text-white flex flex-col items-center h-[50px] w-[130px]">
-                <p class="text-[26px]">Humidity</p>
-                <p class="text-[20px]"><span id="humid">_</span>%</p>
+                <p class="text-[26px]" id="wddh">Humidity</p>
+                <p class="text-[20px]" id="wddv"><span id="humid">_</span>%</p>
             </div>
             <div class="text-white flex flex-col items-center h-[50px] w-[130px] ml-10">
-                <p class="text-[26px]">Wind Speed</p>
-                <p class="text-[20px]"><span id="wind-dir">_</span><span>&nbsp;</span><span id="wind-speed">_</span>&nbsp;KMPH</p>
+                <p class="text-[26px]" id="wddh">Wind Speed</p>
+                <p class="text-[20px]" id="wddv"><span id="wind-dir">_</span><span>&nbsp;</span><span id="wind-speed">_</span>&nbsp;KMPH</p>
             </div>
             <div class="text-white flex flex-col items-center h-[50px] w-[130px]">
-                <p class="text-[26px]">UV</p>
+                <p class="text-[26px]" id="wddh">UV</p>
                 <p class="text-[20px]" id="uv">_</p>
             </div>
             <div class="text-white flex flex-col items-center h-[50px] w-[130px] ml-10">
-                <p class="text-[26px]">Visibility</p>
-                <p class="text-[20px]"><span id="visibility">_</span>&nbsp;KM</p>
+                <p class="text-[26px]" id="wddh">Visibility</p>
+                <p class="text-[20px]" id="wddv"><span id="visibility">_</span>&nbsp;KM</p>
             </div>
             <div class="text-white flex flex-col items-center h-[50px] w-[130px]">
-                <p class="text-[26px]">Air Pressure</p>
-                <p class="text-[20px]"><span id="air-pressure">_</span>&nbsp;hPa</p>
+                <p class="text-[26px]" id="wddh">Air Pressure</p>
+                <p class="text-[20px]" id="wddv"><span id="air-pressure">_</span>&nbsp;hPa</p>
             </div>
         </div>   
     </section>
     <!-- 7day forecast section end -->
 
     <!-- other details section start -->
-    <section class="rounded-[30px] bg-[#202020] drop-shadow-xl w-[440px] h-[350px] px-[10px] py-[15px] mb-[30px] opacity-50 hover:opacity-75 duration-500">
-        <div class="grid grid-cols-2 justify-center h-[170px] w-[300px] gap-x-[150px] gap-y-[45px] mx-[20px] my-[30px]">
+    <section class="rounded-[30px] bg-[#202020] drop-shadow-xl w-[440px] h-[350px] px-[10px] py-[15px] mb-[30px] opacity-50 hover:opacity-75 duration-500" id="other-details">
+        <div class="grid grid-cols-2 justify-center h-[170px] w-[300px] gap-x-[150px] gap-y-[45px] mx-[20px] my-[30px]" id="od-all-data">
             <div class="text-white flex flex-col items-center h-[50px] w-[130px]">
-                <p class="text-[30px]">Sunrise</p>
-                <p class="text-[20px]"><span id="sun-rise">_</span></p>
+                <p class="text-[30px]" id="wddh">Sunrise</p>
+                <p class="text-[20px]" id="wddv"><span id="sun-rise">_</span></p>
             </div>
             <div class="text-white flex flex-col items-center h-[50px] w-[130px]">
-                <p class="text-[30px]">Sunset</p>
-                <p class="text-[20px]"><span id="sun-set">_</span></p>
+                <p class="text-[30px]" id="wddh">Sunset</p>
+                <p class="text-[20px]" id="wddv"><span id="sun-set">_</span></p>
             </div>
             <div class="text-white flex flex-col items-center h-[50px] w-[130px]">
-                <p class="text-[30px]">Moonrise</p>
-                <p class="text-[20px]"><span id="moon-rise">_</span></p>
+                <p class="text-[30px]" id="wddh">Moonrise</p>
+                <p class="text-[20px]" id="wddv"><span id="moon-rise">_</span></p>
             </div>
             <div class="text-white flex flex-col items-center h-[50px] w-[130px]">
-                <p class="text-[30px]">Moonset</p>
-                <p class="text-[20px]"><span id="moon-set">_</span></p>
+                <p class="text-[30px]" id="wddh">Moonset</p>
+                <p class="text-[20px]" id="wddv"><span id="moon-set">_</span></p>
             </div>
             <div class="text-white flex flex-col items-center h-[50px] w-[130px]">
-                <p class="text-[30px]">Moon Phase</p>
+                <p class="text-[30px]" id="wddh">Moon Phase</p>
                 <p class="text-[20px]" id="moon-phase">_</p>
             </div>
             <div class="text-white flex flex-col items-center h-[50px] w-[130px]">
-                <p class="text-[30px]">Illumination</p>
-                <p class="text-[20px]"><span id="illumination">_</span>&nbsp;lux</p>
+                <p class="text-[30px]" id="wddh">Illumination</p>
+                <p class="text-[20px]" id="wddv"><span id="illumination">_</span>&nbsp;lux</p>
             </div>
         </div>
     </section>
@@ -326,7 +325,7 @@
     <!-- lower section end -->
 
     
-        <footer class="flex justify-center gap-[800px] h-[70px] ">
+        <footer class="flex justify-center gap-[800px] h-[70px] " id="footer">
             <div class="text-[#555555] my-5">
                 <p>Created by - Souvik Nath</p>
             </div>
