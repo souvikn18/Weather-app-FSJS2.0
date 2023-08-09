@@ -110,7 +110,7 @@
       
     }
     #temp-details{
-        margin-left:150px;
+        margin-left:450px;
         margin-top: -140px;
     }
     #main-icon{
@@ -178,7 +178,7 @@
     #weather-details{
         height: 260px;
         width: 350px;
-        margin-top: -20px;
+        margin-top: -40px;
     }
     #wdh{
         font-size: 30px;
@@ -200,7 +200,7 @@
     #other-details{
         height: 200px;
         width: 350px;
-        margin-top: -20px;
+        margin-top: -40px;
     }
     #od-all-data{
         row-gap: 13px;
