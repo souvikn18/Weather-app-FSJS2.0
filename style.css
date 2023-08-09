@@ -52,9 +52,9 @@
     scroll-behavior: smooth;
 }
 
-@media only screen and (max-width: 415px) {
+@media only screen and (min-width: 375px) and (max-width:415px) {
     #main{
-        width: 380px;
+        width: 350px;
         height: 330px;
         margin-top: 70px;
     }
@@ -63,7 +63,7 @@
         top: -85px;
     }
     #searchbox{
-        width: 330px;
+        width: 310px;
         height: 40px;
         border-radius: 30px;
         background-color: white;
@@ -72,7 +72,7 @@
         margin-top: 5px;
     }
     #logo-mb{
-        margin-left: 550px;
+        margin-left: 570px;
         margin-top: 20px;
         
     }
@@ -84,10 +84,11 @@
     }
     #all-fonts{
         max-width: 415px;
+        
     }
     #bg-video{
         height: 330px;
-      width: 380px;
+      width: 350px;
       object-fit:fill;
       position: fixed;
       left: 0px;
@@ -102,7 +103,7 @@
       
     }
     #temp-details{
-        margin-left:430px;
+        margin-left:450px;
         margin-top: -140px;
     }
     #main-icon{
@@ -125,7 +126,7 @@
     #scroll{
         position: absolute;
         top: 340px;
-        width: 380px;
+        width: 350px;
         height: 120px;
         left: 0px;
         gap: 100px;
@@ -136,7 +137,7 @@
     }
     #future-forecast{
         height: 260px;
-        width: 380px;
+        width: 350px;
         margin-top: 120px;
     }
     #seven-day{
@@ -154,7 +155,7 @@
     }
     #weather-details{
         height: 260px;
-        width: 380px;
+        width: 350px;
         margin-top: -40px;
     }
     #wdh{
@@ -176,7 +177,7 @@
     }
     #other-details{
         height: 200px;
-        width: 380px;
+        width: 350px;
         margin-top: -40px;
     }
     #od-all-data{
