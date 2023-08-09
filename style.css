@@ -103,7 +103,7 @@
       
     }
     #temp-details{
-        margin-left:250px;
+        margin-left:150px;
         margin-top: -140px;
     }
     #main-icon{
@@ -134,7 +134,7 @@
         overflow-y: hidden;
         white-space: nowrap;
         scroll-behavior: smooth;
-        column-gap: 90px;
+        column-gap: 180px;
     }
     #future-forecast{
         height: 260px;
@@ -189,6 +189,6 @@
     }
     #footer{
         display: flex;
-        gap: 70px;
+        gap: 150px;
     }
 }
