@@ -52,7 +52,7 @@
     scroll-behavior: smooth;
 }
 
-@media only screen and (max-width: 375px) {
+@media screen and (min-width: 280px) and (max-width:767px) {
     #main{
         width: 350px;
         height: 330px;
@@ -70,6 +70,7 @@
         border-radius: 30px;
         background-color: white;
         margin-left: -5px;
+        color: black;
     }
     #search-button{
         margin-top: 5px;
@@ -80,7 +81,7 @@
     }
     #logo-mb{
         margin-left: 570px;
-        margin-top: 20px;
+        margin-top: 10px;
         
     }
     #top-h1{
@@ -110,8 +111,8 @@
       
     }
     #temp-details{
-        margin-left:450px;
-        margin-top: -140px;
+        margin-left:470px;
+        margin-top: -110px;
     }
     #main-icon{
         height: 100px;
@@ -125,7 +126,8 @@
     }
     #max-min{
         font-size: 15px;
-        margin-left: 20px;
+        margin-left: 10px;
+        margin-top: -13px;
     }
     #curr-date{
         margin-left: -30px;
