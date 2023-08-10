@@ -113,6 +113,7 @@
     #temp-details{
         margin-left:470px;
         margin-top: -110px;
+        width: 300px;
     }
     #main-icon{
         height: 100px;
@@ -126,7 +127,7 @@
     }
     #max-min{
         font-size: 15px;
-        margin-left: 10px;
+        margin-left: -20px;
         margin-top: -13px;
     }
     #curr-date{
