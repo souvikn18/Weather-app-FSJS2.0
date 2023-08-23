@@ -13,3 +13,5 @@ Here are the code files:
 [JS](./script.js)
 
 You can click on the above link for visualisation. 
+
+***All the other details are disabled because I didn't have the paid version of weather api and the trial period got over***
